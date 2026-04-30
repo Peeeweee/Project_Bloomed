@@ -102,7 +102,7 @@ function SlideShow() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/our-garden/">
+    <BrowserRouter basename="/Project_Bloomed/">
       <Routes>
         <Route path="*" element={<SlideShow />} />
       </Routes>
