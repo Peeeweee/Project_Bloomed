@@ -1,0 +1,84 @@
+@import '@fontsource/rethink-sans/400.css';
+@import '@fontsource/rethink-sans/500.css';
+@import '@fontsource/rethink-sans/600.css';
+@import '@fontsource/rethink-sans/700.css';
+
+:root {
+  /* Colors */
+  --color-soil: #1a1a12;
+  --color-leaf: #3B6D11;
+  --color-bloom: #D4537E;
+  --color-amber: #EF9F27;
+  --color-cream: #fdfaf4;
+  --color-night: #0d0d1a;
+  --color-gold: #f5c842;
+  --color-parchment: #f5f0e8;
+  --color-text-dark: #2a2a22;
+  --color-text-light: #e8e4d8;
+
+  /* Typography - ALL Rethink Sans */
+  --font-serif: 'Rethink Sans', sans-serif;
+  --font-hand: 'Rethink Sans', sans-serif;
+  --font-body: 'Rethink Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px; /* Increases base font size by ~37.5%, scaling up all rem values universally */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-soil);
+  color: var(--color-cream);
+  overflow: hidden; /* Hide scrollbars for full-screen slide transitions */
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+.handwritten {
+  font-family: var(--font-hand);
+}
+
+/* Global Continuous Animations to make the app feel alive */
+@keyframes global-float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes global-float-rotate {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes global-pulse {
+  0% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 0.8; transform: scale(1); }
+}
+
+.animate-float {
+  animation: global-float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: global-float 9s ease-in-out infinite;
+}
+
+.animate-float-rotate {
+  animation: global-float-rotate 8s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: global-pulse 4s ease-in-out infinite;
+}
