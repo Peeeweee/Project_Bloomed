@@ -9,108 +9,110 @@
  * Note: If a local photo is not found, it will fallback to the Unsplash URL.
  */
 
+const BASE = import.meta.env.BASE_URL;
+
 const getLocalPath = (slide, fileName) => {
-  return `/our-garden/assets/${slide}/${fileName}`;
+  return `${BASE}assets/${slide}/${fileName}`;
 };
 
 export const PHOTO_URLS = {
   // Slide 02 - Sprouted
   slide02: [
-    "/our-garden/assets/Slide02/1.JPG",
-    "/our-garden/assets/Slide02/2.JPG",
+    `${BASE}assets/Slide02/1.JPG`,
+    `${BASE}assets/Slide02/2.JPG`,
   ],
   // Slide 03 - Morning
   slide03: [
-    "/our-garden/assets/Slide03/1.jpg",
-    "/our-garden/assets/Slide03/2.jpg",
-    "/our-garden/assets/Slide03/3.jpg"
+    `${BASE}assets/Slide03/1.jpg`,
+    `${BASE}assets/Slide03/2.jpg`,
+    `${BASE}assets/Slide03/3.jpg`
   ],
   // Slide 04 - Growth
   slide04: {
-    m1: "/our-garden/assets/Slide04/1.jpeg",
-    m2: "/our-garden/assets/Slide04/2.JPG",
-    m3: "/our-garden/assets/Slide04/3.JPG",
-    m4: "/our-garden/assets/Slide04/4.JPG",
-    m5: "/our-garden/assets/Slide04/5.jpg",
-    m6: "/our-garden/assets/Slide04/6.JPG",
-    m7: "/our-garden/assets/Slide04/7.JPG",
-    m8: "/our-garden/assets/Slide04/8.JPG",
-    m9: "/our-garden/assets/Slide04/9.jpg",
+    m1: `${BASE}assets/Slide04/1.jpeg`,
+    m2: `${BASE}assets/Slide04/2.JPG`,
+    m3: `${BASE}assets/Slide04/3.JPG`,
+    m4: `${BASE}assets/Slide04/4.JPG`,
+    m5: `${BASE}assets/Slide04/5.jpg`,
+    m6: `${BASE}assets/Slide04/6.JPG`,
+    m7: `${BASE}assets/Slide04/7.JPG`,
+    m8: `${BASE}assets/Slide04/8.JPG`,
+    m9: `${BASE}assets/Slide04/9.jpg`,
   },
   // Slide 05 - First Date
   slide05: [
-    "/our-garden/assets/Slide05/1.JPG",
-    "/our-garden/assets/Slide05/2.JPG",
-    "/our-garden/assets/Slide05/3.JPG",
-    "/our-garden/assets/Slide05/4.JPG",
-    "/our-garden/assets/Slide05/5.JPG",
-    "/our-garden/assets/Slide05/6.JPG",
-    "/our-garden/assets/Slide05/7.JPG",
+    `${BASE}assets/Slide05/1.JPG`,
+    `${BASE}assets/Slide05/2.JPG`,
+    `${BASE}assets/Slide05/3.JPG`,
+    `${BASE}assets/Slide05/4.JPG`,
+    `${BASE}assets/Slide05/5.JPG`,
+    `${BASE}assets/Slide05/6.JPG`,
+    `${BASE}assets/Slide05/7.JPG`,
   ],
   // Slide 06 - First Trip
   slide06: [
-    "/our-garden/assets/Slide06/1.JPG",
-    "/our-garden/assets/Slide06/2.JPG",
-    "/our-garden/assets/Slide06/3.JPG",
-    "/our-garden/assets/Slide06/4.JPG",
-    "/our-garden/assets/Slide06/5.JPG",
-    "/our-garden/assets/Slide06/6.JPG",
-    "/our-garden/assets/Slide06/7.JPG",
-    "/our-garden/assets/Slide06/8.JPG",
-    "/our-garden/assets/Slide06/9.JPG",
-    "/our-garden/assets/Slide06/10.JPG",
-    "/our-garden/assets/Slide06/11.JPG",
+    `${BASE}assets/Slide06/1.JPG`,
+    `${BASE}assets/Slide06/2.JPG`,
+    `${BASE}assets/Slide06/3.JPG`,
+    `${BASE}assets/Slide06/4.JPG`,
+    `${BASE}assets/Slide06/5.JPG`,
+    `${BASE}assets/Slide06/6.JPG`,
+    `${BASE}assets/Slide06/7.JPG`,
+    `${BASE}assets/Slide06/8.JPG`,
+    `${BASE}assets/Slide06/9.JPG`,
+    `${BASE}assets/Slide06/10.JPG`,
+    `${BASE}assets/Slide06/11.JPG`,
   ],
   // Slide 07 - Afternoon
   slide07: [
-    "/our-garden/assets/Slide07/2.JPG",
-    "/our-garden/assets/Slide07/3.jpg",
-    "/our-garden/assets/Slide07/4.jpg",
+    `${BASE}assets/Slide07/2.JPG`,
+    `${BASE}assets/Slide07/3.jpg`,
+    `${BASE}assets/Slide07/4.jpg`,
   ],
   // Slide 08 - Golden Hour
   slide08: [
-    "/our-garden/assets/Slide08/1.JPG",
-    "/our-garden/assets/Slide08/2.JPG",
-    "/our-garden/assets/Slide08/3.jpg",
+    `${BASE}assets/Slide08/1.JPG`,
+    `${BASE}assets/Slide08/2.JPG`,
+    `${BASE}assets/Slide08/3.jpg`,
   ],
   // Slide 09 - Night
   slide09: [
-    "/our-garden/assets/Slide09/1.JPG",
-    "/our-garden/assets/Slide09/2.JPG",
-    "/our-garden/assets/Slide09/3.JPG",
-    "/our-garden/assets/Slide09/4.JPG",
-    "/our-garden/assets/Slide09/5.JPG",
-    "/our-garden/assets/Slide09/6.JPG",
-    "/our-garden/assets/Slide09/7.JPG",
-    "/our-garden/assets/Slide09/8.JPG",
-    "/our-garden/assets/Slide09/9.JPG",
+    `${BASE}assets/Slide09/1.JPG`,
+    `${BASE}assets/Slide09/2.JPG`,
+    `${BASE}assets/Slide09/3.JPG`,
+    `${BASE}assets/Slide09/4.JPG`,
+    `${BASE}assets/Slide09/5.JPG`,
+    `${BASE}assets/Slide09/6.JPG`,
+    `${BASE}assets/Slide09/7.JPG`,
+    `${BASE}assets/Slide09/8.JPG`,
+    `${BASE}assets/Slide09/9.JPG`,
   ],
   // Slide 10 - Full Bloom
   slide10: [
-    "/our-garden/assets/Slide10/1.JPG",
-    "/our-garden/assets/Slide10/2.JPG",
-    "/our-garden/assets/Slide10/3.JPG",
-    "/our-garden/assets/Slide10/4.JPG",
-    "/our-garden/assets/Slide10/5.JPG",
-    "/our-garden/assets/Slide10/6.JPG",
-    "/our-garden/assets/Slide10/7.JPG",
-    "/our-garden/assets/Slide10/8.JPG",
-    "/our-garden/assets/Slide10/9.JPG",
-    "/our-garden/assets/Slide10/10.JPG",
-    "/our-garden/assets/Slide10/11.JPG",
+    `${BASE}assets/Slide10/1.JPG`,
+    `${BASE}assets/Slide10/2.JPG`,
+    `${BASE}assets/Slide10/3.JPG`,
+    `${BASE}assets/Slide10/4.JPG`,
+    `${BASE}assets/Slide10/5.JPG`,
+    `${BASE}assets/Slide10/6.JPG`,
+    `${BASE}assets/Slide10/7.JPG`,
+    `${BASE}assets/Slide10/8.JPG`,
+    `${BASE}assets/Slide10/9.JPG`,
+    `${BASE}assets/Slide10/10.JPG`,
+    `${BASE}assets/Slide10/11.JPG`,
   ],
   // Slide 11 - Letter (these photos appear in the journal/letter spread - UI Slide 12)
   slide11: [
-    "/our-garden/assets/Slide12/1.JPG",
-    "/our-garden/assets/Slide12/2.JPG",
-    "/our-garden/assets/Slide12/3.JPG",
+    `${BASE}assets/Slide12/1.JPG`,
+    `${BASE}assets/Slide12/2.JPG`,
+    `${BASE}assets/Slide12/3.JPG`,
   ],
   
   // Slide 12 - Garden Continues
   slide12: [
-    "/our-garden/assets/Slide12/1.JPG",
-    "/our-garden/assets/Slide12/2.JPG",
-    "/our-garden/assets/Slide12/3.JPG",
+    `${BASE}assets/Slide12/1.JPG`,
+    `${BASE}assets/Slide12/2.JPG`,
+    `${BASE}assets/Slide12/3.JPG`,
   ],
   // Legacy references (to avoid breaking things immediately)
   photo1: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&q=80&w=800",
